@@ -39,5 +39,5 @@ class PeerService {
 }
 
 const peerServiceInstance = new PeerService();
-
+// eslint-disable-next-line import/no-anonymous-default-export
 export default peerServiceInstance;
