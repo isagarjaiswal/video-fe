@@ -135,15 +135,15 @@ const RoomPage = () => {
         )}
       </div>
       <div className="both-video-show-container">
-        {myStream &&
-        <VideoPlayer
-         url={myStream}
-         heading={"You"} />}
+        {myStream && <VideoPlayer url={myStream} heading={"You"} />}
         {remoteStream && (
-          <VideoPlayer
-          url={remoteStream}
-          heading={"Remote Stream"} />
+          <VideoPlayer url={remoteStream} heading={"Remote Stream"} />
         )}
+      </div>
+      <div className="player-btn-container">
+        <button className="join-btn-lobby">mute</button>
+        <button className="join-btn-lobby">video</button>
+        <button className="join-btn-lobby">end</button>
       </div>
     </div>
   );

@@ -12,3 +12,13 @@
   justify-content: center;
   gap: 10px;
 }
+.both-video-show-container {
+  display: flex;
+  flex: wrap;
+  gap: 20px;
+}
+.player-btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
