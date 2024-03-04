@@ -7,8 +7,8 @@ const VideoPlayer = (props) => {
   return (
     <div className="video-card">
       <ReactPlayer
-        width="250px"
-        height="300px"
+        width="220px"
+        height="250px"
         playing
         muted={true}
         className="video-player"
