@@ -38,6 +38,6 @@ class PeerService {
   }
 }
 
-const serv = new PeerService();
+const peerServiceInstance = new PeerService();
 
-export default serv;
+export default peerServiceInstance;
