@@ -1,17 +1,11 @@
 .video-card {
   height: 30vh;
-
   width: 40vw;
-  border: 1px solid red;
-  overflow: hidden;
   border-radius: 30px;
 }
 @media only screen and (max-width: 600px) {
   .video-card {
-    height: 30vh;
-    width: 40vw;
-    border: 1px solid red;
-    overflow: hidden;
-    border-radius: 30px;
+    height: 40vh;
+    width: 80vw;
   }
 }

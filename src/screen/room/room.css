@@ -15,7 +15,7 @@
 .both-video-show-container {
   display: flex;
   flex: wrap;
-  gap: 20px;
+  gap: 10px;
 }
 .player-btn-container {
     display: flex;
