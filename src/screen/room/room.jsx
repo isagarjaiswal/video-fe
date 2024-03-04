@@ -110,34 +110,44 @@ const RoomPage = () => {
   ]);
 
   return (
-    <div>
-      <h1>Room Page</h1>
-      <h4>{remoteSocketId ? "Connected" : "No one in room"}</h4>
-      {myStream && <button onClick={sendStreams}>Send Stream</button>}
-      {remoteSocketId && <button onClick={handleCallUser}>CALL</button>}
+    <div className="room-container">
+      <div className="room-heading">Room Page</div>
+      <div className="room-description">
+        {remoteSocketId ? "Connected" : "No one in room"}
+      </div>
       {myStream && (
-        <>
-          <h1>My Stream</h1>
+        <button className="join-btn-lobby" onClick={sendStreams}>
+          Send Stream
+        </button>
+      )}
+      {remoteSocketId && (
+        <button className="join-btn-lobby" onClick={handleCallUser}>
+          CALL
+        </button>
+      )}
+      {myStream && (
+        <div className="my-stream-container">
+          <div className="">My Stream</div>
           <ReactPlayer
             playing
-            muted
-            height="100px"
+            // muted
+            height="200px"
             width="200px"
             url={myStream}
           />
-        </>
+        </div>
       )}
       {remoteStream && (
-        <>
-          <h1>Remote Stream</h1>
+        <div className="remote-stream-container">
+          <div>Remote Stream</div>
           <ReactPlayer
             playing
-            muted
+            // muted
             height="100px"
             width="200px"
             url={remoteStream}
           />
-        </>
+        </div>
       )}
     </div>
   );

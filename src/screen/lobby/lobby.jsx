@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 export const LobbyScreen = () => {
   const [email, setEmail] = useState("");
   const [room, setRoom] = useState("");
+  const [error, setError] = useState(false);
 
   const socket = useSocket();
   const navigate = useNavigate();
@@ -13,7 +14,8 @@ export const LobbyScreen = () => {
   const handleSubmitForm = useCallback(
     (e) => {
       e.preventDefault();
-      socket.emit("room:join", { email, room });
+      if (email && room) socket.emit("room:join", { email, room });
+      else setError(true);
     },
     [email, room, socket]
   );
@@ -37,6 +39,7 @@ export const LobbyScreen = () => {
     <div className="">
       <div className="lobby-heading">Lobby</div>
       <form onSubmit={handleSubmitForm} className="lobby-form-container">
+        {error && <span className="error-lobby-form">Enter valid</span>}
         <input
           type="email"
           placeholder="Email ID"
@@ -51,7 +54,10 @@ export const LobbyScreen = () => {
           value={room}
           onChange={(e) => setRoom(e.target.value)}
         />
-        <button className="join-btn-lobby">Join</button>
+
+        <button type="submit" className="join-btn-lobby">
+          Join
+        </button>
       </form>
     </div>
   );
