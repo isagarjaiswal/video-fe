@@ -116,6 +116,9 @@ const RoomPage = () => {
     handleNegoNeedFinal,
   ]);
 
+  const handleMute = () => {};
+  const handleCallEnd = () => {};
+  const handleVideoOff = () => {};
   return (
     <div className="room-container">
       <div className="room-heading">Room Page</div>
@@ -140,11 +143,19 @@ const RoomPage = () => {
           <VideoPlayer url={remoteStream} heading={"Remote Stream"} />
         )}
       </div>
-      <div className="player-btn-container">
-        <button className="join-btn-lobby">mute</button>
-        <button className="join-btn-lobby">video</button>
-        <button className="join-btn-lobby">end</button>
-      </div>
+      {remoteStream && myStream && (
+        <div className="player-btn-container">
+          <button onClick={handleMute} className="join-btn-lobby">
+            mute
+          </button>
+          <button onClick={handleVideoOff} className="join-btn-lobby">
+            video
+          </button>
+          <button onClick={handleCallEnd} className="join-btn-lobby">
+            end
+          </button>
+        </div>
+      )}
     </div>
   );
 };
