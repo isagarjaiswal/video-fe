@@ -1,0 +1,14 @@
+.room-heading {
+  font-size: 56px;
+}
+
+.room-description {
+  font-size: 24px;
+}
+
+.room-btn-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}

@@ -39,7 +39,7 @@ export const LobbyScreen = () => {
     <div className="">
       <div className="lobby-heading">Lobby</div>
       <form onSubmit={handleSubmitForm} className="lobby-form-container">
-        {error && <span className="error-lobby-form">Enter valid</span>}
+      {error && <span className="error-lobby-form">Enter valid</span>}
         <input
           type="email"
           placeholder="Email ID"
