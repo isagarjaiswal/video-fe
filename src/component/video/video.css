@@ -1,0 +1,14 @@
+.video-container {
+  background-color: #253237;
+  color: #fff;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* light-1  E0FBFC */
+/* light-2  C2DFE3 */
+/* light-3  9DB4C0 */
+/* light-4  5C6B73 */
+/* light-5  253237 */
