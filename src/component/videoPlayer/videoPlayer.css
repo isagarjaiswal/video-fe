@@ -5,6 +5,9 @@
 }
 .video-card {
   width: 40vw;
+  height: 30vh;
+  min-width: 300px;
+
   overflow: hidden;
   border-radius: 30px;
 }

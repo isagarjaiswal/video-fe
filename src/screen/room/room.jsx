@@ -9,6 +9,9 @@ const RoomPage = () => {
   const [remoteSocketId, setRemoteSocketId] = useState(null);
   const [myStream, setMyStream] = useState();
   const [remoteStream, setRemoteStream] = useState();
+  // const [isMuted, setIsMuted] = useState(false);
+  // const [isPaused, setIsPaused] = useState(false);
+  // const [isEnd, setIsEnd] = useState(false);
   // const [userName, setUserName] = useState("");
   // const [userRemoteName, setRemoteUserName] = useState("");
 

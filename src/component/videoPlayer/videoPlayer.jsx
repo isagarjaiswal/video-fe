@@ -3,9 +3,7 @@ import "./videoPlayer.css";
 import ReactPlayer from "react-player";
 
 const VideoPlayer = (props) => {
-  // const [isMuted, setIsMuted] = useState(false);
-  // const [isPaused, setIsPaused] = useState(false);
-  // const [isEnd, setIsEnd] = useState(false);
+  
   const { url } = props;
   return (
     <div className="video-player-container">
