@@ -10,7 +10,6 @@ const VideoPlayer = (props) => {
         width="220px"
         height="250px"
         playing
-        muted={true}
         className="video-player"
         url={url}
       />

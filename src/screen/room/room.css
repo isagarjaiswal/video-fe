@@ -1,14 +1,12 @@
 .room-container {
-  width: 100%;
-  min-height: 100%;
+  width: 100vw;
+  height: 100vh;
   overflow-x: hidden;
 }
 .room-heading {
   font-size: 56px;
 }
-* {
-  border: 1px solid red;
-}
+
 .room-description {
   font-size: 24px;
 }
